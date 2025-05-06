@@ -1,0 +1,300 @@
+/* Grafitoon CSS - Urban Cartoon Theme */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.grafitoon-logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.grafi {
+    color: white;
+}
+
+toon {
+    color: orange;
+}
+
+nav {
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.hero {
+    background-image: url('cartoon-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ffcc80;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 30px;
+    backdrop-filter: blur(3px);
+}
+
+.feature-card {
+    background: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    color: #222;
+}
+
+.feature-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+    .feature-card {
+        width: 90%;
+    }
+}
+
+.background-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background.GIF') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.25;
+    animation: none;
+}
+
+.team-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(255, 165, 0, 0.4);
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.login-card {
+    background: #1c1c1c;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 90%;
+    color: white;
+    box-shadow: 0px 0px 15px rgba(255, 102, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.login-card h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #ff6600;
+}
+
+.login-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-card label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-card input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #2c2c2c;
+    color: white;
+}
+
+.login-card .btn {
+    background: #ff6600;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.login-card .btn:hover {
+    background: #e55b00;
+}
+
+.cart-container {
+    padding: 40px;
+    color: white;
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cart-table th, .cart-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.cart-table img {
+    border-radius: 10px;
+}
+
+.cart-total-row td {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #292929;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.btn-secondary {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #666;
+}
+
+.empty-cart-msg {
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff6600;
+    border-radius: 8px;
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
